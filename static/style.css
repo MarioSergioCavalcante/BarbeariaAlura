@@ -1,0 +1,221 @@
+/*Css da página home*/
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: #0000FF;
+}
+
+nav a:hover {
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+
+.banner {
+    width: 100%;
+}
+
+.principal {
+
+    padding: 3em 0;
+    background-color: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em 0;
+    clear: left;
+
+}
+
+
+
+.principal p {
+    margin: 0 0 1em;
+
+}
+
+.principal em {
+    font-style: italic;
+    color: #FF0000;
+}
+
+.principal strong {
+    font-weight: bold;
+    color: #000000;
+}
+
+/*Modificador  de id*/
+
+/*Ao usar classe utilizar ponto antes do nome da classe*/
+
+
+
+.img-util {
+    display: flex;
+    float: left;
+    width: 120px;
+    margin: 0 20px 20px 0;
+}
+
+/*Começo do Mapa*/
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.modificador-mapa {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+
+/*Beneficios*/
+.conteudo-benficios {
+    width: 640px;
+    margin: 0 auto;
+
+}
+
+.beneficios {
+
+    background-color: #888888;
+    color: black;
+    padding: 2em;
+
+}
+
+.img-beneficios {
+    width: 50%;
+
+}
+
+.itens-beneficios {
+    width: 40%;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    vertical-align: top;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+
+.itens {
+    line-height: 1.5em;
+
+}
+
+.itens::before {
+    content: "✭ ";
+}
+
+.itens:first-child {
+    font-weight: bold;
+
+}
+
+/*Fim Beneficios*/
+
+
+/*Inicio do footer*/
+footer {
+    text-align: center;
+    background: url("../Imgs/bg.jpg");
+
+    padding: 20px 0;
+}
+
+.footerCoop {
+    font-size: 13px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+/*Fim do footer*/
+
+
+/*
+    Seletores avançados em CSS
+    main > p : Pega todos os p que são filhos diretos de main
+    main + p : Pega o primeiro p que vem depois de main
+    main ~ p : Pega todos os p que vem depois de main
+
+*/  
+
+@media screen and (max-width: 480px){
+    .caixa, .principal, .conteudo-benficios, .modificador-mapa, .video{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+        font-size: 1px;
+    }
+    .lista-beneficios,.img-beneficios{
+        width: 100%;
+    }
+    .itens-beneficios{
+      display: inline;
+      font-size: 18px;
+     
+    }
+    .img-beneficios{
+        margin-top: 20px;
+    }
+    .principal{
+        padding: 20px;
+        text-align: justify;
+    }
+}
