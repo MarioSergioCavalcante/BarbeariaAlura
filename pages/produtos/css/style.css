@@ -80,12 +80,12 @@ nav a:active {
 footer{
     text-align: center;
     background: url("../../../Imgs/bg.jpg");
-    opacity: 0.3;
+
     padding: 20px 0;
 }
 .footerCoop{
     font-size: 13px;
     color:#FFFFFF;
-    opacity: 1;
+ 
     margin-top: 20px;
 }
